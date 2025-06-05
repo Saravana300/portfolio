@@ -1,0 +1,31 @@
+.resume {
+    background-color: #76349352;
+    color: #b3b3b3;
+    position: absolute;
+    font-family: cursive;
+    font-size: medium;
+    padding: 14px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 13px 2px #d342af;
+}
+
+.resume:nth-child(1) {
+
+    top: -1733%;
+    left: 19%;
+}
+
+.resume:nth-child(2) {
+    top: -372%;
+    right: 5%;
+}
+
+.resume:nth-child(3) {
+    top: 960%;
+    left: 32%;
+}
+
+.resume:nth-child(4) {
+    top: 2406%;
+    right: 19%;
+}

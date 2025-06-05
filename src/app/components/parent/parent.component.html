@@ -1,0 +1,24 @@
+<!-- <article class="d-flex justify-content-center align-items-center h-100">
+   <section class="welcomePage" *ngIf="!progressInitComplete()">
+      <div class="welcomeBlock d-flex" #welcomePage>Hi Developers</div>
+      <div class="line" #shineLine></div>
+  </section>
+  <section class="progress" *ngIf="!progressInitComplete()" #progressHome></section>
+  <article *ngIf="progressInitComplete()" class="parentFirstFold">
+    <app-navbar></app-navbar>
+    <app-home></app-home>
+  </article>
+</article> -->
+
+<article class="d-flex justify-content-center w-100 h-100">
+  <section class="w-100 h-100">
+    <app-navbar class=""></app-navbar>
+    <app-home class="parentSection home"></app-home>
+    <div class="horizontal-wrapper">
+      <app-service-home class="parentSection service"></app-service-home>
+      <app-skills-home class="parentSection skill"></app-skills-home>
+    </div>
+    <app-resume-home class="position-relative resume parentSection"></app-resume-home>
+    <app-contact-home class="parentSection contact"></app-contact-home>
+  </section>
+</article>

@@ -1,0 +1,22 @@
+.horizontal-wrapper {
+    display: flex;
+
+    // width: 300vw;
+
+    /* 5 sections x 100vw */
+    .parentSection {
+        flex: 0 0 100vw;
+
+        // height: 100vh;
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
+        &.service {
+            margin-top: 70px;
+        }
+
+        // font-size: 3rem;
+        // background: #ccc;
+        // border-right: 2px solid white;
+    }
+}

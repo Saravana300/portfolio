@@ -1,0 +1,125 @@
+.skillsParent {
+    margin-top: 145px !important;
+    position: relative;
+
+    .skillsSection {
+        // scale: 3;
+
+        .skillHomeSvg {
+            // width: 70px;
+            // height: 70px;
+            margin-top: 170px !important;
+            border-radius: 50%;
+            padding: 10px;
+            box-shadow: inset 0px 0px 7px 0px #9d1fbe87;
+        }
+    }
+
+    .skillRotate {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-130%, -50%);
+
+        .circle-img:nth-child(1) {
+            position: absolute;
+            transform: rotate(0deg) translate(400px) rotate(0deg);
+
+            .lineRoundSvg {
+                position: absolute;
+                width: 110px;
+                height: 12px;
+                transform: rotate(-4deg) translate(-210px) rotate(4deg);
+                border-radius: 15px;
+                box-shadow: inset 0px 0px 7px #812fa7;
+            }
+        }
+
+        .circle-img:nth-child(2) {
+            position: absolute;
+            transform: rotate(39.4deg) translate(358px) rotate(-39.4deg);
+
+            .lineRoundSvg {
+                position: absolute;
+                width: 110px;
+                height: 12px;
+                transform: rotate(20deg) translate(-225px) rotate(11deg);
+                border-radius: 15px;
+                box-shadow: inset 0px 0px 7px #812fa7;
+            }
+        }
+
+        .circle-img:nth-child(3) {
+            position: absolute;
+            transform: rotate(147.8deg) translate(435px) rotate(-148.8deg);
+
+            .lineRoundSvg {
+                position: absolute;
+                width: 110px;
+                height: 12px;
+                transform: rotate(-30deg) translate(171px) rotate(-4deg);
+                border-radius: 15px;
+                box-shadow: inset 0px 0px 7px #812fa7;
+            }
+        }
+
+        .circle-img:nth-child(4) {
+            position: absolute;
+            transform: rotate(179.2deg) translate(545px) rotate(-180.2deg);
+
+            .lineRoundSvg {
+                position: absolute;
+                width: 110px;
+                height: 12px;
+                transform: rotate(3deg) translate(235px) rotate(-2deg);
+                border-radius: 15px;
+                box-shadow: inset 0px 0px 7px #812fa7;
+            }
+        }
+
+        .circle-img:nth-child(5) {
+            position: absolute;
+            transform: rotate(203.6deg) translate(513px) rotate(-203.6deg);
+
+            .lineRoundSvg {
+                position: absolute;
+                width: 110px;
+                height: 12px;
+                transform: rotate(-158deg) translate(-225px) rotate(11deg);
+                border-radius: 15px;
+                box-shadow: inset 0px 0px 7px #812fa7;
+            }
+        }
+
+        .circle-img:nth-child(6) {
+            position: absolute;
+            transform: rotate(272deg) translate(258px) rotate(-272deg);
+
+            .lineRoundSvg {
+                position: absolute;
+                width: 60px;
+                height: 8px;
+                transform: rotate(-97deg) translate(-158px) rotate(7deg);
+                border-radius: 15px;
+                box-shadow: inset 0px 0px 7px #812fa7;
+            }
+        }
+
+        .circle-img:nth-child(7) {
+            scale: 2;
+            position: absolute;
+            transform: rotate(331.4deg) translateX(207px) rotate(-330.4deg);
+
+            .lineRoundSvg {
+                position: absolute;
+                width: 50px;
+                height: 5px;
+                transform: rotate(-48deg) translate(-98px) rotate(14deg);
+                border-radius: 15px;
+                box-shadow: inset 0px 0px 3px #812fa7;
+            }
+        }
+    }
+}

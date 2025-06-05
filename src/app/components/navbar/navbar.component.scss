@@ -1,0 +1,81 @@
+.navParentBlock {
+  position: fixed;
+  top: 0px;
+  color: white;
+
+  .leftNavBlocks {
+    .portfolio {
+      color: #cba3e7;
+    }
+  }
+
+  .rightNavBlocks {
+    .navImage {
+      max-width: 70px;
+      width: 100%;
+      border-radius: 50%;
+    }
+  }
+
+  // .centerNavBlocks {
+  //   div {
+  //     box-shadow:0 0 0 1px rgb(86 93 108), 0 2px 2px -2px rgb(163 51 154), 0 4px 4px rgb(94 48 150 / 70%), 0 8px 8px rgb(145 149 158 / 14%), 0 16px 16px rgb(13 14 16), 0 32px 32px rgb(255 255 255 / 0%) !important;
+  //     border-radius: 20px;
+  //     padding: 4px;
+  //     background-color: #68408f54;
+  //     // justify-content: center;
+  //     width: 30%;
+  //     // height: 65px;
+  //     // .navbarText {
+  //     //   font-size: large;
+  //     //   font-family: monospace;
+  //     //   color: #e6abff;
+  //     // }
+  //     // .activeNav {
+  //     //   // animation: navBar 0.5s ease-in-out;
+  //     //   animation-fill-mode: forwards;
+  //     //   @keyframes navBar {
+  //     //     from {
+  //     //       top: 10px;
+  //     //     }
+  //     //     to {
+  //     //       top: 30px;
+  //     //     }
+  //     //   }
+  //     // }
+  //     // li {
+  //     //   font-family: cursive;
+  //     //   font-size: larger;
+  //     // }
+
+  //     .navRotateDiv {
+  //       background: #68408f54;
+  //       position: absolute;
+  //       width: 70px;
+  //       height: 70px;
+  //       // top: -3px;  
+  //       border-radius: 50%;
+  //       // top: 28px;
+  //       border: 7px rgb(3, 14, 27) solid;
+  //     }
+  //   }
+  // }
+  .centerNavBlocks {
+    width: 30%;
+    background-color: #9e948738;
+    padding: 8px;
+    border-radius: 20px;
+  }
+}
+
+.rotateDiv {
+  position: fixed;
+  left: 780.4375px;
+  width: 75px;
+  height: 75px;
+  top: 22px;
+  border-radius: 50%;
+  border: 3px solid rgb(180 111 219) !important;
+  background-color: rgb(3, 14, 27) !important;
+  box-shadow: 0px 0px 6px 1px #8e76b7;
+}

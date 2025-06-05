@@ -1,0 +1,51 @@
+.serviceParent {
+    display: grid;
+    // margin-top: 150px !important;
+    grid-template-columns: repeat(3, 1fr);
+    color: white;
+
+    .cardParent {
+        overflow: hidden;
+        box-shadow: 5px 5px 12px 0px #ce82dc;
+        align-items: center;
+        background-color: rgb(133 81 170 / 16%);
+        border-radius: 16px;
+        display: flex;
+        justify-content: center;
+        padding: 25px;
+        margin-block: 15px;
+        margin-inline: 30px;
+        transition: all 0.2s;
+        position: relative;
+        border: 3px groove #8e21c8;
+
+        .headingParent {
+            color: #bd85c6;
+            font-size: x-large;
+            font-family: serif;
+        }
+
+        .headSplitLine {
+            width: 100%;
+            background-color: #8f8f8f;
+            height: 1px;
+        }
+
+        .headingContent {
+            color: #c0aac8;
+            font-family: serif;
+            font-style: italic;
+        }
+
+        .line {
+            position: absolute;
+            width: 35px;
+            background: linear-gradient(120deg, #d52cf03b, rgb(163 87 154 / 65%), #dc5c6947);
+            transform: skewX(322deg);
+            height: 100%;
+            left: -100px;
+            border: 2px groove #d8d2d26b;
+            opacity: .7;
+        }
+    }
+}

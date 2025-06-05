@@ -1,0 +1,45 @@
+<article class="homeParent d-flex justify-content-between">
+  <section class="textBlock">
+    <h4 class="fullstack" #fullStack>FullStack Developer</h4>
+    <div class="name d-flex" #name>Saravanan B</div>
+    <div class="py-3 descriptionParent">
+      <h4 class="description" [class]="descriptionClass ? 'd-flex' : 'd-none'" #description>
+        I code better with coffee in my hand
+      </h4>
+      <h4 class="secondDescription" [class]="secondDescriptionClass ? 'd-flex' : 'd-none'" #secondDescription>
+        and a debugger by my side.
+      </h4>
+    </div>
+    <!-- <div class="coffee">
+      <app-coffee></app-coffee>
+    </div> -->
+  </section>
+  <section class="animationRotateBlock d-flex justify-content-center position-relative">
+    <!-- <img class="homeImage" src="/Resources/images/cartoon-secondFold.png"  style="z-index: 95;" /> -->
+    <img class="homeImage" src="/Resources/images/homepagenew.jpeg" style="z-index: 95;" />
+    <div class="programmingLanguages angular" [style]="" #angular>
+      <app-angular></app-angular>
+    </div>
+    <div class="programmingLanguages dotNet" #dotNet>
+      <app-dot-net></app-dot-net>
+    </div>
+    <div class="programmingLanguages fabric" #fabric>
+      <app-fabric></app-fabric>
+    </div>
+    <div class="programmingLanguages java" #java>
+      <app-java></app-java>
+    </div>
+    <div class="programmingLanguages js" #js>
+      <app-javascript></app-javascript>
+    </div>
+    <div class="programmingLanguages pega" #pega>
+      <app-pega></app-pega>
+    </div>
+    <div class="programmingLanguages php" #php>
+      <app-php></app-php>
+    </div>
+    <div class="programmingLanguages react" #react>
+      <app-react></app-react>
+    </div>
+  </section>
+</article>
