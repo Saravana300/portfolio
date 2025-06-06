@@ -29,7 +29,7 @@ import { CarouselComponentComponent } from "../CarouselComponent/carousel-compon
     SkillsComponent,
     AngularComponent,
     CarouselComponentComponent
-],
+  ],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.scss',
 })
@@ -40,9 +40,9 @@ export class NavbarComponent implements AfterViewInit {
 
   ngAfterViewInit() {
     this.splitText.splitText(
-            this.portfolio.nativeElement,
-            'innerPortfolioChar'
-          );
+      this.portfolio.nativeElement,
+      'innerPortfolioChar'
+    );
 
     $('.portfolio ')
       .children()
@@ -52,42 +52,26 @@ export class NavbarComponent implements AfterViewInit {
         }
       });
 
-      gsap.from('#innerPortfolioChar', {
-        duration: 2,
-        opacity: 0,
-        scale: 1,
-        rotationX: 450,
-        ease: 'back.out',
-        stagger: 0.1,
-        onComplete: () => {
-          if ($('.iAnimationClass').length != 0) {
-            gsap.to('.iAnimationClass', {
-              rotationX: 180,
-              duration: 1,
-              delay: 3,
-              yoyo: true,
-              repeat: -1,
-              transformOrigin: '0px 25px',
-              ease: 'power2.inOut',
-            });
-          }
-        },
-      });
-
-    // $('.centerNavBlocks').ready(() => {
-    //     this.navSwiper = new Swiper('.navbar .swiper',{
-    //         // loop: true,
-    //         // slidesPerView: 3.5,
-    //         // spaceBetween: 10,
-    //         // grabCursor: true,
-    //         // centeredSlides: true,
-    //         slidesPerView: 5,
-    //         spaceBetween: 10,
-    //         centeredSlides: true,
-    //         loop: true,
-    //         initialSlide: 0,
-            
-    //     })
-    // })
+    gsap.from('#innerPortfolioChar', {
+      duration: 2,
+      opacity: 0,
+      scale: 1,
+      rotationX: 450,
+      ease: 'back.out',
+      stagger: 0.1,
+      onComplete: () => {
+        if ($('.iAnimationClass').length != 0) {
+          gsap.to('.iAnimationClass', {
+            rotationX: 180,
+            duration: 1,
+            delay: 3,
+            yoyo: true,
+            repeat: -1,
+            transformOrigin: '0px 25px',
+            ease: 'power2.inOut',
+          });
+        }
+      },
+    });
   }
 }
