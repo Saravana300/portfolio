@@ -88,32 +88,34 @@ export class HomeComponent implements AfterViewInit {
     ];
     this.splitText.splitText(this.name.nativeElement, 'innerNameChar');
 
-    this.ProgrammingLanguage.forEach((event, index) => {
-      this.gsapJson.push({
-        event: (this.gsapValue = gsap.to(Object.values(event)[0], {
-          duration: 8,
-          repeat: -1,
-          delay: index,
-          motionPath: {
-            path: [
-              { x: 285, y: 150 },
-              { x: 0, y: 300 },
-              { x: -285, y: 150 },
-              { x: 0, y: 0 },
-            ],
-            curviness: 1,
-          },
-          ease: 'linear',
-          onUpdate: () => {
-            this.ProgrammingLanguage.forEach((e, i) => {
-              Object.values(e)[0].getBoundingClientRect().top < 370
-                ? (Object.values(e)[0].style.zIndex = 90)
-                : (Object.values(e)[0].style.zIndex = 99);
-            });
-          },
-        })),
+    if (window.outerWidth > 1024) {
+      this.ProgrammingLanguage.forEach((event, index) => {
+        this.gsapJson.push({
+          event: (this.gsapValue = gsap.to(Object.values(event)[0], {
+            duration: 8,
+            repeat: -1,
+            delay: index,
+            motionPath: {
+              path: [
+                { x: 285, y: 150 },
+                { x: 0, y: 300 },
+                { x: -285, y: 150 },
+                { x: 0, y: 0 },
+              ],
+              curviness: 1,
+            },
+            ease: 'linear',
+            onUpdate: () => {
+              this.ProgrammingLanguage.forEach((e, i) => {
+                Object.values(e)[0].getBoundingClientRect().top < 370
+                  ? (Object.values(e)[0].style.zIndex = 90)
+                  : (Object.values(e)[0].style.zIndex = 99);
+              });
+            },
+          })),
+        });
       });
-    });
+    }
 
     gsap.set(this.name.nativeElement, { perspective: 400 });
 

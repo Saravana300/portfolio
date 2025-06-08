@@ -1,7 +1,7 @@
-<owl-carousel-o [options]="customOptions" #owlCarousel>
-    <ng-template carouselSlide><app-home-svg></app-home-svg></ng-template>  
-    <ng-template carouselSlide><app-services></app-services></ng-template>  
-    <ng-template carouselSlide><app-resume></app-resume></ng-template>  
-    <ng-template carouselSlide><app-skills></app-skills></ng-template>  
-    <ng-template carouselSlide><app-contacts></app-contacts></ng-template>  
+<owl-carousel-o [options]="customOptions" (translated)="onTranslated($event)" #owlCarousel>
+    <ng-template carouselSlide><app-home-svg (click)="carouselClickableFunc($event,0)"></app-home-svg></ng-template>
+    <ng-template carouselSlide><app-services (click)="carouselClickableFunc($event,1)"></app-services></ng-template>
+    <ng-template carouselSlide><app-skills (click)="carouselClickableFunc($event,2)"></app-skills></ng-template>
+    <ng-template carouselSlide><app-resume (click)="carouselClickableFunc($event,3)"></app-resume></ng-template>
+    <ng-template carouselSlide><app-contacts (click)="carouselClickableFunc($event,4)"></app-contacts></ng-template>
 </owl-carousel-o>

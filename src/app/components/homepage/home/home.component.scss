@@ -33,6 +33,12 @@
       color: #dfdcff;
     }
 
+    @media screen and (max-width: 1240px) {
+      .name {
+        font-size: 50px;
+      }
+    }
+
     .descriptionParent {
       color: #d39ee3;
     }
@@ -51,5 +57,17 @@
       position: absolute;
       z-index: -1;
     }
+  }
+}
+
+@media screen and (max-width: 1240px) {
+  .programmingLanguages {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .animationRotateBlock {
+    display: none !important;
   }
 }

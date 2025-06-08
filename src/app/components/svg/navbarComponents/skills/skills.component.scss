@@ -1,0 +1,8 @@
+.nonActiveCarousel {
+    transform: scale(0.7);
+}
+
+.activeCarousel {
+    transition: transform .5s linear;
+    transform: scale(1);
+}

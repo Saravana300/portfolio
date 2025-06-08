@@ -20,3 +20,10 @@
         // border-right: 2px solid white;
     }
 }
+
+@media screen and (max-width: 1240px) {
+    .horizontal-wrapper {
+        display: block;
+        margin-top: 20em;
+    }
+}

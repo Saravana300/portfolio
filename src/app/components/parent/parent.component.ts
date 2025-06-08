@@ -11,46 +11,48 @@ import { SkillsHomeComponent } from "../skillsHome/skills-home/skills-home.compo
 import { ResumeHomeComponent } from "../resumeHome/resume-home/resume-home.component";
 import { ContactHomeComponent } from "../contactHome/contact-home/contact-home.component";
 import { ScrollTrigger } from 'gsap/all';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-parent',
-  imports: [NavbarComponent, HomeComponent, ServicesComponent, ServiceHomeComponent, SkillsHomeComponent, ResumeHomeComponent, ContactHomeComponent],
+  imports: [CommonModule, NavbarComponent, HomeComponent, ServicesComponent, ServiceHomeComponent, SkillsHomeComponent, ResumeHomeComponent, ContactHomeComponent],
   templateUrl: './parent.component.html',
   styleUrl: './parent.component.scss',
 })
 
 export class ParentComponent implements AfterViewInit {
-
-
+  progressInitComplete: boolean = false;
   ngAfterViewInit() {
     gsap.registerPlugin(ScrollTrigger)
-
-
-
-    gsap.to(".parentSection.home", {
-      scrollTrigger: {
-        trigger: ".parentSection.home",
-        scrub: 1.5,
-        start: 'top 30%',
-        end: () => "+=" + $(".parentSection.home")[0].getBoundingClientRect().height,
-        markers: false,
-      },
-      ease: "ease.in",
-      y: -100,
-      opacity: 0,
-    });
-
-    gsap.to(".horizontal-wrapper", {
-      xPercent: -100,
-      ease: "power1.inOut",
-      scrollTrigger: {
-        trigger: ".horizontal-wrapper",
-        pin: true,
-        scrub: 1.5,
-        end: () => "+=" + $(".horizontal-wrapper")[0].offsetWidth,
-        markers: false,
+    if (window.outerWidth > 768) {
+      this.progressInitComplete = false;
+      gsap.to(".parentSection.home", {
+        scrollTrigger: {
+          trigger: ".parentSection.home",
+          scrub: 1.5,
+          start: 'top 30%',
+          end: () => "+=" + $(".parentSection.home")[0].getBoundingClientRect().height,
+          markers: false,
+        },
+        ease: "ease.in",
+        y: -100,
+        opacity: 0,
+      });
+      if (window.outerWidth > 1024) {
+        gsap.to(".horizontal-wrapper", {
+          xPercent: -100,
+          ease: "power1.inOut",
+          scrollTrigger: {
+            trigger: ".horizontal-wrapper",
+            pin: true,
+            scrub: 1.5,
+            end: () => "+=" + $(".horizontal-wrapper")[0].offsetWidth,
+            markers: false,
+          }
+        });
       }
-    });
+    } else {
+      this.progressInitComplete = true;
+    }
   }
-
 }

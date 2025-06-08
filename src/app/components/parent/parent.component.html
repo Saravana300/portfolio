@@ -11,14 +11,20 @@
 </article> -->
 
 <article class="d-flex justify-content-center w-100 h-100">
-  <section class="w-100 h-100">
-    <app-navbar class=""></app-navbar>
-    <app-home class="parentSection home"></app-home>
+  <section class="w-100 h-100" *ngIf="!progressInitComplete">
+    <app-navbar></app-navbar>
+    <app-home id="homeId" class="parentSection home"></app-home>
     <div class="horizontal-wrapper">
-      <app-service-home class="parentSection service"></app-service-home>
-      <app-skills-home class="parentSection skill"></app-skills-home>
+      <app-service-home id="serviceId" class="parentSection horizontal-slide service"></app-service-home>
+      <app-skills-home id="skillId" class="parentSection horizontal-slide skill"></app-skills-home>
     </div>
-    <app-resume-home class="position-relative resume parentSection"></app-resume-home>
-    <app-contact-home class="parentSection contact"></app-contact-home>
+    <app-resume-home id="resumeId" class="position-relative resume parentSection"></app-resume-home>
+    <app-contact-home id="contactId" class="parentSection contact"></app-contact-home>
+  </section>
+  <section class="d-flex justify-content-center align-items-center" *ngIf="progressInitComplete">
+    <div style="padding: 50px;font-size: xxx-large;color: purple;">Please use a laptop or desktop for the full animation
+      experience. Responsive adjustments are
+      currently in
+      progress.</div>
   </section>
 </article>
