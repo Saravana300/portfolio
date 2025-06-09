@@ -52,7 +52,7 @@ export class CarouselComponentComponent implements AfterViewInit {
             gsap.to('.horizontal-wrapper', {
                 scrollTrigger: {
                     onUpdate: () => {
-                        if ($('.horizontal-wrapper')[0].getBoundingClientRect().top < 0 && $('.horizontal-wrapper')[0].getBoundingClientRect().top > -500) {
+                        if ($('.horizontal-wrapper').length && $('.horizontal-wrapper')[0].getBoundingClientRect().top < 0 && $('.horizontal-wrapper')[0].getBoundingClientRect().top > -500) {
                             if ($('.horizontal-wrapper')[0].getBoundingClientRect().left > -960) {
                                 this.owlCarousel.to(`owl-slide-1`);
                             } else {
@@ -67,7 +67,7 @@ export class CarouselComponentComponent implements AfterViewInit {
         gsap.to('.resume.parentSection', {
             scrollTrigger: {
                 onUpdate: () => {
-                    if ($('.resume.parentSection')[0].getBoundingClientRect().top < 1475 && $('.resume.parentSection')[0].getBoundingClientRect().top > -812) {
+                    if ($('.resume.parentSection').length && $('.resume.parentSection')[0].getBoundingClientRect().top < 1475 && $('.resume.parentSection')[0].getBoundingClientRect().top > -812) {
                         this.owlCarousel.to(`owl-slide-3`);
                     }
                 }
@@ -88,7 +88,7 @@ export class CarouselComponentComponent implements AfterViewInit {
                 start: 'top center',
                 end: "+=" + ($('.contact.parentSection')[0].getBoundingClientRect().height * 3),
                 onUpdate: () => {
-                    if ($('.contact.parentSection')[0].getBoundingClientRect().top < 400 && $('.contact.parentSection')[0].getBoundingClientRect().top > 0) {
+                    if ($('.contact.parentSection').length && $('.contact.parentSection')[0].getBoundingClientRect().top < 400 && $('.contact.parentSection')[0].getBoundingClientRect().top > 0) {
                         this.owlCarousel.to(`owl-slide-4`);
                     }
                 }

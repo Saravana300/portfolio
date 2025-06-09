@@ -26,7 +26,7 @@ export class ResumeHomeComponent implements AfterViewInit {
       scrollTrigger: {
         trigger: "#motionPath",
         start: '60%',
-        end: () => "+=" + $("#motionPath")[0].getBoundingClientRect().height,
+        end: () => "+=" + ($("#motionPath").length ? $("#motionPath")[0].getBoundingClientRect().height : null),
         scrub: 1.5,
         markers: false,
         onUpdate: self => {

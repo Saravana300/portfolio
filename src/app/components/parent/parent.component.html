@@ -21,10 +21,7 @@
     <app-resume-home id="resumeId" class="position-relative resume parentSection"></app-resume-home>
     <app-contact-home id="contactId" class="parentSection contact"></app-contact-home>
   </section>
-  <section class="d-flex justify-content-center align-items-center" *ngIf="progressInitComplete">
-    <div style="padding: 50px;font-size: xxx-large;color: purple;">Please use a laptop or desktop for the full animation
-      experience. Responsive adjustments are
-      currently in
-      progress.</div>
+  <section class="w-100 h-100" *ngIf="progressInitComplete">
+    <app-mobile-component></app-mobile-component>
   </section>
 </article>

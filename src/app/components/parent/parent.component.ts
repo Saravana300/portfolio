@@ -12,10 +12,11 @@ import { ResumeHomeComponent } from "../resumeHome/resume-home/resume-home.compo
 import { ContactHomeComponent } from "../contactHome/contact-home/contact-home.component";
 import { ScrollTrigger } from 'gsap/all';
 import { CommonModule } from '@angular/common';
+import { MobileComponentComponent } from "../mobileComponent/mobile-component/mobile-component.component";
 
 @Component({
   selector: 'app-parent',
-  imports: [CommonModule, NavbarComponent, HomeComponent, ServicesComponent, ServiceHomeComponent, SkillsHomeComponent, ResumeHomeComponent, ContactHomeComponent],
+  imports: [CommonModule, NavbarComponent, HomeComponent, ServicesComponent, ServiceHomeComponent, SkillsHomeComponent, ResumeHomeComponent, ContactHomeComponent, MobileComponentComponent],
   templateUrl: './parent.component.html',
   styleUrl: './parent.component.scss',
 })
